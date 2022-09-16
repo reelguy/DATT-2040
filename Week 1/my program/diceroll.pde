@@ -9,7 +9,7 @@ int stepx, stepy, stepx2, stepy2;
 
 //setup the size of my canvas
 void setup() {
-  size(500, 500);
+  size(500, 1000);
 
   //value of stepsizes
   stepx = (width / cols);
@@ -96,21 +96,21 @@ void diceroll() {
   case 4: 
     strokeWeight(2);
     stroke(48, 128, 111);
-    line(x, y, x+linesize, y);
+    line(x, y, x+linesize, y-linesize);
     break;
   case 5: 
     strokeWeight(2);
     stroke(125, 87, 12);
-    line(x, y, x, y+linesize);
+    line(x, y, x-linesize, y+linesize);
     break;
   case 6: 
     strokeWeight(2);
-    line(x, y, x-linesize, y);
+    line(x, y, x-linesize, y-linesize);
     break;
   case 7: 
     strokeWeight(2);
-    stroke(255,255,255);
-    line(x, y, x, y-linesize);
+    stroke(87,22,255);
+    line(x, y, x+linesize, y+linesize);
     break;
   }
 }
