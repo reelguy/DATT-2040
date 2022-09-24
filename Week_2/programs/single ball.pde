@@ -45,6 +45,8 @@ void draw() {
     //multiply the accelearation.x by -1
     // we can think of this as a switch between positive and negative values for acceleration
     acc.x = acc.x * -1;
+    
+    //every time the ball hits a wall it changes color!
     col = new PVector(random(0,255), random(0,255), random(0,255));
     fill(col.x, col.y, col.z);
   }
