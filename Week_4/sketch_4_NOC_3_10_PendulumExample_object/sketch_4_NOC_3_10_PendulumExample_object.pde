@@ -19,9 +19,9 @@
 
 //added object array, spread and damp
 Pendulum[] p;
-int num = 1;
-int spread = 5;
-float dampval = 1; 
+int num = 10;
+int spread = 10;
+float dampval = 0.996; 
 //float dampval = 0.995; 
 
 void setup() {
@@ -36,7 +36,7 @@ void setup() {
 
 void draw() {
 
-  background(255);
+  background(255, 125, 125);
   for (int i = 0; i < num; i++) {
     p[i].go();
   }
